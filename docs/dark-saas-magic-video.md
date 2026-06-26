@@ -1,0 +1,39 @@
+# Dark SaaS Magic Video
+
+用于制作暗色 cinematic SaaS / AI 产品短片，适合工具发布、产品能力展示、AI 工作流演示和 Presenton-like magic UI 风格视频。
+
+<video src="../assets/videos/dark-saas-magic-video-preview.mp4" controls muted loop playsinline width="100%"></video>
+
+![暗色 SaaS 质检拼图](../assets/images/dark-saas-magic-video-contact.jpg)
+
+## 做什么类型的视频
+
+- AI 产品介绍短片
+- SaaS 功能发布视频
+- 工具/开源项目发布片
+- 黑色科技感 UI 动效片
+
+## 视频风格
+
+- 近黑背景和弱紫色底部辉光
+- 大号白色 kinetic typography
+- 青蓝到洋红渐变 CTA
+- 漂浮 UI 卡片、模板、窗口、徽章、模型环
+- speed blur、white wipe、scale rush 转场
+
+## 适合使用
+
+- "做一个类似 Presenton 的暗色 SaaS 产品短片。"
+- "做成这种 magic UI 风格。"
+- "我要一个 AI 工具发布视频。"
+
+## 不适合使用
+
+- 不用于逐帧复刻参考视频。
+- 不用于黑底白字单独开场。那更适合 `black-white-text-opener`。
+
+## 安装
+
+```bash
+npx skills add https://github.com/Pluviobyte/video-production-skills --skill dark-saas-magic-video
+```
