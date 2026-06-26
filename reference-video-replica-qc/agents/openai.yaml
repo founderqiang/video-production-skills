@@ -1,0 +1,4 @@
+interface:
+  display_name: "参考视频复刻验收"
+  short_description: "参考视频逐帧拆解复刻等级判断对齐差分和硬质检完整流程"
+  default_prompt: "Use $reference-video-replica-qc to analyze this reference video, set the replica level, and verify alignment."
