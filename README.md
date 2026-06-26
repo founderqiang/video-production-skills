@@ -30,6 +30,42 @@ npx skills add https://github.com/Pluviobyte/video-production-skills --skill bla
 
 做参考视频复刻或像素级对齐时，优先使用 `reference-video-replica-qc`；做同风格原创短片时，使用 `dark-saas-magic-video`；做黑底白字、逐字打字、打字音效、字体变化类开场时，使用 `black-white-text-opener`。
 
+## 怎么选择
+
+| 你想做什么 | 使用 |
+| --- | --- |
+| 复刻参考视频、逐帧分析、判断是否对齐 | `reference-video-replica-qc` |
+| 做类似 Presenton 的暗色 SaaS / AI 产品短片 | `dark-saas-magic-video` |
+| 给新视频加一段黑底白字逐字打字开场 | `black-white-text-opener` |
+
+## 黑底白字开场
+
+`black-white-text-opener` 默认制作这种开场：
+
+1. 纯黑或近黑背景先保持一小段时间。
+2. 白色文字一个字一个字出现。
+3. 每个可见字符对应一个轻微 typing click 音效。
+4. 中间可以切换关键词或第二段文案。
+5. 最后一行文字短暂停留，再转入正片。
+
+它会生成可执行的 timing plan，里面包含：
+
+- `typing_events`：每个字符出现的时间点。
+- `sfx_events`：每个打字音效的时间点、音量和轻微 pitch 变化。
+- `warnings`：如果文案太长、打字速度过快，会提示缩短文案或拉长时长。
+
+示例：
+
+```bash
+python3 black-white-text-opener/scripts/create_opener_plan.py \
+  --title "我开源了 视频复刻 Skill" \
+  --replace "HyperFrames" "Remotion" \
+  --final "就能够复刻。" \
+  --preset slow \
+  --typing-cps 12 \
+  --out opener-plan.json
+```
+
 ## 典型用法
 
 - "每 0.5 秒抽帧，拆解参考视频并检查新视频是否对齐。"
@@ -63,5 +99,16 @@ npx skills add https://github.com/Pluviobyte/video-production-skills --skill bla
 ```
 
 These skills are designed for Codex, Claude Code, Cursor, and other agents that support local skills or the Skills CLI.
+
+## Choosing A Skill
+
+| Goal | Use |
+| --- | --- |
+| Analyze, recreate, or verify reference-video alignment | `reference-video-replica-qc` |
+| Create a dark cinematic SaaS/product short | `dark-saas-magic-video` |
+| Create a black-background opener with typed white text and typing clicks | `black-white-text-opener` |
+
+`black-white-text-opener` generates a timing plan with `typing_events`,
+`sfx_events`, and warnings for copy that is too long for the selected cadence.
 
 </details>
