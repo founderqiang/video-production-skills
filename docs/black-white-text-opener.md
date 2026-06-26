@@ -2,9 +2,7 @@
 
 用于制作新视频开头：纯黑/近黑背景，白色文字一个字一个字打出来，并同步短促 typing click 音效。
 
-[播放 MP4](../assets/videos/black-white-text-opener-preview.mp4)
-
-<video src="../assets/videos/black-white-text-opener-preview.mp4" controls playsinline width="100%"></video>
+[▶ Watch Black White Text Opener](https://github.com/user-attachments/assets/3962d773-4447-4720-ba59-5e164d0b5ac4)
 
 质检抽帧：
 

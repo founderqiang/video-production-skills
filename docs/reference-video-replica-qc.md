@@ -2,9 +2,7 @@
 
 用于参考视频复刻、拆解和对齐质检。它不是“凭感觉复刻”，而是先抽帧、写时间线，再用候选视频做对照验证。
 
-[播放 MP4](../assets/videos/reference-video-replica-qc-preview.mp4)
-
-<video src="../assets/videos/reference-video-replica-qc-preview.mp4" controls muted loop playsinline width="100%"></video>
+[▶ Watch Reference Replica QC Preview](https://github.com/user-attachments/assets/9aa84ae3-694b-41ec-b5ff-9ab965d899cb)
 
 0.5 秒对照抽帧：
 

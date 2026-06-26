@@ -18,27 +18,19 @@
 
 ### 黑底白字打字开场
 
-[播放 MP4](https://github.com/Pluviobyte/video-production-skills/blob/main/assets/videos/black-white-text-opener-preview.mp4)
-
-<video src="./assets/videos/black-white-text-opener-preview.mp4" controls playsinline width="100%"></video>
+[▶ Watch Black White Text Opener](https://github.com/user-attachments/assets/3962d773-4447-4720-ba59-5e164d0b5ac4)
 
 ### 暗色 SaaS / Magic UI
 
-[播放预览 MP4](https://github.com/Pluviobyte/video-production-skills/blob/main/assets/videos/dark-saas-magic-video-preview.mp4)
-
-<video src="./assets/videos/dark-saas-magic-video-preview.mp4" controls muted loop playsinline width="100%"></video>
+[▶ Watch Dark SaaS Magic Preview](https://github.com/user-attachments/assets/495b2822-51d4-4515-9fae-a4b197957c7d)
 
 完整示例成片：**雪踏乌云暗色 SaaS 介绍短片**
 
-[播放完整成片 MP4](https://github.com/Pluviobyte/video-production-skills/blob/main/dark-saas-magic-video/assets/showcases/xuetawuyun-dark-saas-showcase-1080p.mp4)
-
-<video src="./dark-saas-magic-video/assets/showcases/xuetawuyun-dark-saas-showcase-1080p.mp4" controls playsinline width="100%"></video>
+[▶ Watch Xuetawuyun Dark SaaS Showcase](https://github.com/user-attachments/assets/6d4236af-6b58-4447-986d-21169ea5e3a6)
 
 ### 参考视频复刻质检
 
-[播放 MP4](https://github.com/Pluviobyte/video-production-skills/blob/main/assets/videos/reference-video-replica-qc-preview.mp4)
-
-<video src="./assets/videos/reference-video-replica-qc-preview.mp4" controls muted loop playsinline width="100%"></video>
+[▶ Watch Reference Replica QC Preview](https://github.com/user-attachments/assets/9aa84ae3-694b-41ec-b5ff-9ab965d899cb)
 
 ## 仓库会如何扩展
 
@@ -54,7 +46,8 @@
 
 - 一个独立 skill 目录，包含 `SKILL.md` 和必要脚本。
 - 一个 `docs/<skill-name>.md` 介绍页，说明视频类型、风格、适合/不适合场景。
-- 优先提供 MP4 视频预览，放在 `assets/videos/` 或 skill 自己的 `assets/showcases/`。
+- 优先提供 MP4 视频预览，放在 `assets/videos/` 或 skill 自己的 `assets/showcases/` 作为可版本化归档。
+- README / docs 里的可播放展示使用 GitHub `user-attachments/assets/...` URL，写法参考 Presenton：`[▶ Watch Demo](https://github.com/user-attachments/assets/<id>)`。
 - 抽帧图、contact sheet、对照图只作为封面/质检辅助，放在 `assets/images/`。
 - 在本 README 的表格中补充一行，说明它属于哪个视频制作环节。
 
