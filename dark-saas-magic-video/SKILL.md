@@ -19,6 +19,14 @@ Create new product videos in a dark, cinematic, UI-conjuring style. This is a
 style-generation skill, not a reference-alignment skill. Use it after
 `video-production-director` selects a style-level product or SaaS video route.
 
+## Canonical Showcase
+
+- Human display name: 暗色 SaaS 魔术短片
+- Example finished piece: 雪踏乌云暗色 SaaS 介绍短片
+- File: `assets/showcases/xuetawuyun-dark-saas-showcase-1080p.mp4`
+- Use this as a style reference for scale, pacing, scene vocabulary, and final
+  polish. Do not copy its text unless the user asks for the same brand/account.
+
 ## Boundaries
 
 - Use this for style-level creation: "做成这个感觉", "类似 Presenton 这种风格",

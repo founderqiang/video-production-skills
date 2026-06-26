@@ -11,7 +11,7 @@
 | Skill | 视频制作环节 | 适合做什么 | 视频风格 / 方法 | 详情 |
 | --- | --- | --- | --- | --- |
 | `reference-video-replica-qc` | 复刻分析 / 质检 | 参考视频拆解、复刻对齐、像素/视觉级质检 | 证据驱动：0.5 秒抽帧、时间线报告、对照图、PSNR/SSIM/哈希验证 | [查看页面](docs/reference-video-replica-qc.md) |
-| `dark-saas-magic-video` | 风格化正片生成 | 暗色 SaaS / AI 产品短片、工具发布视频、产品能力展示 | Presenton-like magic UI：黑色空间、底部紫光、动感大字、渐变 CTA、漂浮 UI、模型环、导出物件 | [查看页面](docs/dark-saas-magic-video.md) |
+| `dark-saas-magic-video`<br>暗色 SaaS 魔术短片 | 风格化正片生成 | 暗色 SaaS / AI 产品短片、工具发布视频、产品能力展示 | Presenton-like magic UI：黑色空间、底部紫光、动感大字、渐变 CTA、漂浮 UI、模型环、导出物件 | [查看页面](docs/dark-saas-magic-video.md) |
 | `black-white-text-opener` | 片头包装 | 新视频片头、教程开场、观点视频开头、产品视频引子 | 纯黑/近黑背景 + 白色大字逐字打出 + 同步 typing click 音效 + 干净转场 | [查看页面](docs/black-white-text-opener.md) |
 
 ## 效果预览
@@ -23,6 +23,10 @@
 ### 暗色 SaaS / Magic UI
 
 <video src="./assets/videos/dark-saas-magic-video-preview.mp4" controls muted loop playsinline width="100%"></video>
+
+完整示例成片：**雪踏乌云暗色 SaaS 介绍短片**
+
+<video src="./dark-saas-magic-video/assets/showcases/xuetawuyun-dark-saas-showcase-1080p.mp4" controls playsinline width="100%"></video>
 
 ### 参考视频复刻质检
 
@@ -85,7 +89,7 @@ The repository is not limited to the first three skills. Future video-production
 | Skill | Production Stage | Video Type | Style / Method |
 | --- | --- | --- | --- |
 | `reference-video-replica-qc` | Recreation analysis / QA | Reference video analysis, recreation QC, alignment verification | Evidence-driven frame extraction, timelines, side-by-side review, hard metrics |
-| `dark-saas-magic-video` | Styled main video | Dark SaaS / AI product shorts | Presenton-like magic UI with black space, purple glow, kinetic type, gradient CTA, floating UI |
+| `dark-saas-magic-video` / Dark SaaS Magic Short | Styled main video | Dark SaaS / AI product shorts | Presenton-like magic UI with black space, purple glow, kinetic type, gradient CTA, floating UI |
 | `black-white-text-opener` | Opener packaging | Opening title cards for new videos | Black background, typed white text, timed typing clicks, clean transition |
 
 Recommended install:
