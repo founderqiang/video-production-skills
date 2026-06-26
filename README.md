@@ -18,17 +18,25 @@
 
 ### 黑底白字打字开场
 
+[播放 MP4](https://github.com/Pluviobyte/video-production-skills/blob/main/assets/videos/black-white-text-opener-preview.mp4)
+
 <video src="./assets/videos/black-white-text-opener-preview.mp4" controls playsinline width="100%"></video>
 
 ### 暗色 SaaS / Magic UI
+
+[播放预览 MP4](https://github.com/Pluviobyte/video-production-skills/blob/main/assets/videos/dark-saas-magic-video-preview.mp4)
 
 <video src="./assets/videos/dark-saas-magic-video-preview.mp4" controls muted loop playsinline width="100%"></video>
 
 完整示例成片：**雪踏乌云暗色 SaaS 介绍短片**
 
+[播放完整成片 MP4](https://github.com/Pluviobyte/video-production-skills/blob/main/dark-saas-magic-video/assets/showcases/xuetawuyun-dark-saas-showcase-1080p.mp4)
+
 <video src="./dark-saas-magic-video/assets/showcases/xuetawuyun-dark-saas-showcase-1080p.mp4" controls playsinline width="100%"></video>
 
 ### 参考视频复刻质检
+
+[播放 MP4](https://github.com/Pluviobyte/video-production-skills/blob/main/assets/videos/reference-video-replica-qc-preview.mp4)
 
 <video src="./assets/videos/reference-video-replica-qc-preview.mp4" controls muted loop playsinline width="100%"></video>
 
@@ -46,7 +54,8 @@
 
 - 一个独立 skill 目录，包含 `SKILL.md` 和必要脚本。
 - 一个 `docs/<skill-name>.md` 介绍页，说明视频类型、风格、适合/不适合场景。
-- 尽量提供一个短视频预览或质检图，放在 `assets/videos/` 或 `assets/images/`。
+- 优先提供 MP4 视频预览，放在 `assets/videos/` 或 skill 自己的 `assets/showcases/`。
+- 抽帧图、contact sheet、对照图只作为封面/质检辅助，放在 `assets/images/`。
 - 在本 README 的表格中补充一行，说明它属于哪个视频制作环节。
 
 ## 推荐安装

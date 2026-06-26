@@ -2,7 +2,11 @@
 
 用于参考视频复刻、拆解和对齐质检。它不是“凭感觉复刻”，而是先抽帧、写时间线，再用候选视频做对照验证。
 
+[播放 MP4](../assets/videos/reference-video-replica-qc-preview.mp4)
+
 <video src="../assets/videos/reference-video-replica-qc-preview.mp4" controls muted loop playsinline width="100%"></video>
+
+0.5 秒对照抽帧：
 
 ![0.5 秒对照图](../assets/images/reference-video-replica-qc-compare.jpg)
 
