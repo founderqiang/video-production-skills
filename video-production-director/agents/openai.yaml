@@ -1,4 +1,0 @@
-interface:
-  display_name: "视频制作总控"
-  short_description: "统筹视频需求拆解制作验收归档和多工具路线选择完整流程"
-  default_prompt: "Use $video-production-director to plan, route, produce, QC, and archive this video from my brief."

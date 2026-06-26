@@ -1,0 +1,4 @@
+interface:
+  display_name: "Black White Text Opener"
+  short_description: "Generate black-background white-text openers"
+  default_prompt: "Use $black-white-text-opener to create a black background white kinetic text opening animation for this video."
