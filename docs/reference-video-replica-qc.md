@@ -2,7 +2,15 @@
 
 用于参考视频复刻、拆解和对齐质检。它不是“凭感觉复刻”，而是先抽帧、写时间线，再用候选视频做对照验证。
 
-[▶ Watch Reference Replica QC Preview](https://github.com/user-attachments/assets/9aa84ae3-694b-41ec-b5ff-9ab965d899cb)
+## 示例成片：Presenton 复刻 Bitexact 成片
+
+[▶ Watch Presenton Replica Bitexact Showcase](https://github.com/user-attachments/assets/f792bd12-d8b3-43b7-b751-98aeb033713b)
+
+- 类型：参考视频复刻结果
+- 级别：bit-exact / pixel-aligned 交付成片
+- 时长：35.136 秒
+- 规格：1920x1080，30fps，H.264 + AAC
+- 文件：`reference-video-replica-qc/assets/showcases/presenton-replica-pixel-aligned-bitexact.mp4`
 
 0.5 秒对照抽帧：
 

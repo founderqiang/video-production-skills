@@ -16,6 +16,14 @@ Make reference-video work evidence-driven. First classify the requested fidelity
 then extract frames, describe the source timeline, compare the candidate, and
 only then approve or reject the result.
 
+## Canonical Showcase
+
+- Human display name: Presenton 复刻 Bitexact 成片
+- Example finished piece: Presenton replica pixel-aligned bitexact output
+- File: `assets/showcases/presenton-replica-pixel-aligned-bitexact.mp4`
+- Use this as the repository's reference-video replication showcase. It is the
+  correct public example for this skill, replacing older short preview clips.
+
 ## Fidelity Levels
 
 Read `references/replica-levels.md` before promising any fidelity level.

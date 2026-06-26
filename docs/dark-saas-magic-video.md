@@ -2,8 +2,6 @@
 
 用于制作暗色 cinematic SaaS / AI 产品短片，适合工具发布、产品能力展示、AI 工作流演示和 Presenton-like magic UI 风格视频。
 
-[▶ Watch Dark SaaS Magic Preview](https://github.com/user-attachments/assets/495b2822-51d4-4515-9fae-a4b197957c7d)
-
 质检抽帧：
 
 ![暗色 SaaS 质检拼图](../assets/images/dark-saas-magic-video-contact.jpg)

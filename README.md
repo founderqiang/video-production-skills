@@ -22,15 +22,15 @@
 
 ### 暗色 SaaS / Magic UI
 
-[▶ Watch Dark SaaS Magic Preview](https://github.com/user-attachments/assets/495b2822-51d4-4515-9fae-a4b197957c7d)
-
-完整示例成片：**雪踏乌云暗色 SaaS 介绍短片**
+示例成片：**雪踏乌云暗色 SaaS 介绍短片**
 
 [▶ Watch Xuetawuyun Dark SaaS Showcase](https://github.com/user-attachments/assets/6d4236af-6b58-4447-986d-21169ea5e3a6)
 
 ### 参考视频复刻质检
 
-[▶ Watch Reference Replica QC Preview](https://github.com/user-attachments/assets/9aa84ae3-694b-41ec-b5ff-9ab965d899cb)
+示例成片：**Presenton 复刻 Bitexact 成片**
+
+[▶ Watch Presenton Replica Bitexact Showcase](https://github.com/user-attachments/assets/f792bd12-d8b3-43b7-b751-98aeb033713b)
 
 ## 仓库会如何扩展
 
