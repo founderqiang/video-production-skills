@@ -33,7 +33,7 @@ def duration(video: Path) -> float:
 
 
 def safe_time(t: float) -> str:
-    return f"{t:.1f}".replace(".", "_")
+    return f"{t:.3f}".replace(".", "_")
 
 
 def extract_frame(video: Path, out: Path, t: float, scale: str) -> None:
@@ -97,11 +97,33 @@ def make_contact_sheet(frame_paths: list[Path], out: Path, cols: int, title: str
     return True
 
 
+def parse_explicit_times(value: str) -> list[float]:
+    times = []
+    for item in value.split(","):
+        item = item.strip()
+        if not item:
+            continue
+        times.append(round(float(item), 3))
+    return times
+
+
+def build_times(start: float, end: float, interval: float) -> list[float]:
+    times = []
+    current = start
+    while current <= end + 0.001:
+        times.append(round(current, 3))
+        current += interval
+    return times
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Extract fixed-interval frames from a video.")
     parser.add_argument("video", type=Path)
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument("--interval", type=float, default=0.5)
+    parser.add_argument("--start", type=float, default=0.0, help="Start timestamp in seconds.")
+    parser.add_argument("--end", type=float, help="End timestamp in seconds. Defaults to video duration.")
+    parser.add_argument("--times", help="Comma-separated explicit timestamps, overriding interval sampling.")
     parser.add_argument("--scale", default="480:270")
     parser.add_argument("--contact", action="store_true", help="Create contact sheets if Pillow is available.")
     parser.add_argument("--cols", type=int, default=3)
@@ -120,8 +142,15 @@ def main() -> None:
     contact_dir.mkdir(parents=True, exist_ok=True)
 
     dur = duration(video)
-    count = math.floor(dur / args.interval) + 1
-    times = [round(i * args.interval, 3) for i in range(count + 1) if i * args.interval <= dur + 0.001]
+    start = max(0.0, args.start)
+    end = min(args.end if args.end is not None else dur, dur)
+    if start > end:
+        raise SystemExit("--start must be less than or equal to --end")
+
+    if args.times:
+        times = [t for t in parse_explicit_times(args.times) if 0 <= t <= dur + 0.001]
+    else:
+        times = build_times(start, end, args.interval)
 
     frames = []
     for t in times:
@@ -132,7 +161,10 @@ def main() -> None:
     manifest = {
         "video": str(video),
         "duration": dur,
+        "start": start,
+        "end": end,
         "interval": args.interval,
+        "explicit_times": bool(args.times),
         "scale": args.scale,
         "frame_count": len(frames),
         "frames": [str(p) for p in frames],
