@@ -17,7 +17,7 @@ description: >
 
 Create new product videos in a dark, cinematic, UI-conjuring style. This is a
 style-generation skill, not a reference-alignment skill. Use it after
-`video-production-director` selects a style-level product or SaaS video route.
+`ai-motion-director` selects a style-level product or SaaS video route.
 
 ## Canonical Showcase
 
