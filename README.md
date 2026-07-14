@@ -19,7 +19,7 @@
 | Skill | 视频制作环节 | 适合做什么 | 视频风格 / 方法 | 详情 |
 | --- | --- | --- | --- | --- |
 | `ai-motion-director`<br>AI 动效导演元 Skill | 主题到动效语言 / 元导演 / 反 PPT 质检 | 给一个主题、脚本或简报，先建立 motion thesis、beat graph、组件/素材计划，再控制 HyperFrames/Remotion 进入制作 | Motion-first：视觉隐喻、连续时间线、状态变化、运动语法、anti-PPT gate | [查看页面](docs/ai-motion-director.md) |
-| `reference-video-replica-qc` | 复刻闭环 / 组件沉淀 / 质检 | 参考视频拆解、动效复刻、HyperFrames/Remotion 组件化、像素/视觉级质检 | Goal 驱动：0.5 秒粗抽帧、失败窗口密采样、对照图、局部 crop、返修日志、PSNR/SSIM/哈希验证 | [查看页面](docs/reference-video-replica-qc.md) |
+| `reference-video-replica-qc` | 复刻闭环 / 组件沉淀 / 质检 | 参考视频拆解、动效复刻、HyperFrames/Remotion 组件化、五级保真度判定 | 先采样定位、再全帧验收；素材门、运行时门、交付门；MAE/时间偏移/边界帧/PSNR/SSIM/哈希证据 | [查看页面](docs/reference-video-replica-qc.md) |
 | `dark-saas-magic-video`<br>暗色 SaaS 魔术短片 | 风格化正片生成 | 暗色 SaaS / AI 产品短片、工具发布视频、产品能力展示 | Presenton-like magic UI：黑色空间、底部紫光、动感大字、渐变 CTA、漂浮 UI、模型环、导出物件 | [查看页面](docs/dark-saas-magic-video.md) |
 | `black-white-text-opener` | 片头包装 | 新视频片头、教程开场、观点视频开头、产品视频引子 | 纯黑/近黑背景 + 白色大字逐字打出 + 同步 typing click 音效 + 干净转场 | [查看页面](docs/black-white-text-opener.md) |
 
@@ -93,7 +93,7 @@ npx skills add https://github.com/Pluviobyte/video-production-skills --skill bla
 ## 设计边界
 
 - `ai-motion-director` 不替代最终渲染、抽帧、字幕、音频和归档流程；它负责先定义 motion thesis、beat graph、组件/素材计划和 anti-PPT gate。
-- `reference-video-replica-qc` 不凭感觉宣称像素级对齐；像素级需要一致哈希、`cmp`、PSNR infinity 或 SSIM 1.0 等硬证据。手写 HyperFrames/Remotion 复刻通常目标是视觉级对齐和组件沉淀。
+- `reference-video-replica-qc` 把保真度拆成源码一致、渲染帧像素一致、编码成片帧对齐、视觉对齐、风格对齐五级。任何像素级结论都必须通过素材、运行时和交付三道逐帧门；手写 HyperFrames/Remotion 复刻通常目标是视觉级对齐和参数化组件沉淀。
 - `dark-saas-magic-video` 是风格级创作 skill，不用于逐帧复刻。
 - `black-white-text-opener` 是生成型开场 skill，默认要求逐字打字和同步 typing click 音效；不用于复用原片或声明像素级对齐。
 
@@ -111,7 +111,7 @@ The repository is not limited to the current skills. Future video-production ski
 | Skill | Production Stage | Video Type | Style / Method |
 | --- | --- | --- | --- |
 | `ai-motion-director` | Topic-to-motion direction / anti-PPT QA | Topic-driven original motion videos, beat graph planning, component routing | Motion-first direction: visual metaphor, state change, motion grammar, asset plan, anti-PPT gate |
-| `reference-video-replica-qc` | Recreation loop / component capture / QA | Reference analysis, motion recreation, HyperFrames/Remotion componentization, alignment verification | Goal-driven coarse sampling, dense failing-window sampling, side-by-side review, crop evidence, repair logs, hard metrics |
+| `reference-video-replica-qc` | Recreation loop / component capture / QA | Reference analysis, motion recreation, HyperFrames/Remotion componentization, five-level fidelity classification | Samples locate failures; full frames approve asset, runtime, and delivery gates with MAE, temporal, boundary, PSNR/SSIM, and hash evidence |
 | `dark-saas-magic-video` / Dark SaaS Magic Short | Styled main video | Dark SaaS / AI product shorts | Presenton-like magic UI with black space, purple glow, kinetic type, gradient CTA, floating UI |
 | `black-white-text-opener` | Opener packaging | Opening title cards for new videos | Black background, typed white text, timed typing clicks, clean transition |
 
